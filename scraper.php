@@ -1,7 +1,7 @@
 <?php
 require 'scraperwiki.php';
-
 require 'scraperwiki/simple_html_dom.php';           
+
 $html_content = scraperwiki::scrape("http://www.marctracker.com/PublicView/location.jsp");
 $html = str_get_html($html_content);
 $train_status = array();
@@ -14,6 +14,6 @@ $train_status = array();
     }         
 }
 
-scraperwiki::save_sqlite(array("train_status"), array("train_status" => $train_status));
+scraperwiki::save_sqlite($train_status, $train_status);
 
 ?>
