@@ -9,7 +9,7 @@ $html = str_get_html($html_content);
     $a =  $el->title;
     if (strpos($a,'Train') !== false) {
         echo $a . "\n";
-        scraperwiki::save_sqlite(array("status"), array("status" => "Train"));
+        scraperwiki::save_sqlite($a,$a));
     }         
 }
 ?>
