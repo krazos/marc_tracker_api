@@ -11,4 +11,7 @@ $html = str_get_html($html_content);
         echo $a . "\n";
     }         
 }
+
+scraperwiki::save_sqlite;
+
 ?>
