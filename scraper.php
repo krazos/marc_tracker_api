@@ -14,6 +14,6 @@ $train_status = array();
     }         
 }
 
-scraperwiki::save_sqlite($train_status, $train_status);
+scraperwiki::save_sqlite($unique_keys = array(), $train_status);
 
 ?>
